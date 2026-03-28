@@ -2,6 +2,8 @@
 
 {% block extrafooter %}
     <p>
-        <a href="{{ pathto('credits-and-attribution') }}">Credits and attribution</a>.
+        {% trans pathto_credits_and_attribution = pathto('credits-and-attribution') -%}
+        <a href="{{ pathto_credits_and_attribution }}">Credits and attribution</a>.
+        {%- endtrans %}
     </p>
 {% endblock %}
